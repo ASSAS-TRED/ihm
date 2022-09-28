@@ -1,5 +1,5 @@
 {
-  "name": "graduation",
+  "name": "ihm",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:prod": "ng build --configuration production --base-href https://lysgraduation.github.io/graduation/",
+    "build:prod": "ng build --configuration production --base-href https://assas-tred.github.io/ihm/",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
