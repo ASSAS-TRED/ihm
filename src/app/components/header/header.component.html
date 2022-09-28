@@ -1,6 +1,6 @@
 <section class="top-nav">
-    <div>
-        ASSAS-TRED
+    <div class="logo-div">
+        <img src="assets/images/Logo Petit.png" alt="" class="logo">
     </div>
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
@@ -8,19 +8,19 @@
     </label>
     <ul class="navbar-nav  mb-2 mb-lg-0 menu">
         <li class="nav-item active">
-            <a class="nav-link" href="/">Accueil</a>
+            <a class="nav-link" href="/" class="{{isCurrentPage('')?'selected-page':''}}">ACCUEIL</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/masters">Masters</a>
+            <a class="nav-link" href="/masters" class="{{isCurrentPage('/masters')?'selected-page':''}}">MASTERS</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/promotion">Promotions</a>
+            <a class="nav-link" href="/promotion" class="{{isCurrentPage('/promotion')?'selected-page':''}}">PROMOTIONS</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/actualite">Actualité</a>
+            <a class="nav-link" href="/actualite" class="{{isCurrentPage('/actualite')?'selected-page':''}}">ACTUALITÉS</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
+            <a class="nav-link" href="/contact" class="{{isCurrentPage('/contact')?'selected-page':''}}">CONTACT</a>
         </li>
     </ul>
 </section>

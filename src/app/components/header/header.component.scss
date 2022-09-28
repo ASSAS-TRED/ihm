@@ -1,3 +1,6 @@
+@import "../../shared/_variable.scss";
+@import "https://fonts.googleapis.com/css?family=Poppins&display=swap";
+
 h2 {
     vertical-align: center;
     text-align: center;
@@ -11,15 +14,25 @@ body {
 
 
 .top-nav {
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: rgb(185, 184, 184);
+    background: rgb(185, 184, 184, 0);
 
-    color: rgb(68, 68, 68);
-    height: 80px;
+    color: rgba(255, 255, 255);
+    font-family:'Poppins', light;
+    height: 110px;
     padding: 1em;
+    width: 100%;
+}
+
+.selected-page {
+    color: $base-red;
+    font-weight: 900;
+    border-bottom: 1px solid $base-red;
+    padding-bottom: 5px;
 }
 
 .menu {
@@ -29,11 +42,20 @@ body {
     margin: 0;
     padding: 0;
     right: 0;
+    margin-right: 100px;
 }
 
 .menu>li {
     margin: 0 1rem;
     overflow: hidden;
+}
+
+
+.logo-div {
+    margin-left: 20px;
+}
+.logo {
+    height: 90px;
 }
 
 .menu-button-container {
@@ -94,7 +116,7 @@ body {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 80px;
+        margin-top: 110px;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -131,3 +153,4 @@ body {
         border-bottom: 1px solid #444;
     }
 }
+
